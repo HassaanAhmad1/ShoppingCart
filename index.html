@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet"href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/66a173202e.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script defer src="script.js"></script>
+  <title>Hassaan Cart</title>
+  </head>
+  <body class="bg-light">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-10 col-11 mx-auto">
+            <div class="row mt-5 gx-3">
+                <div class="col-md-12 col-lg-8 col-11 mx-auto main_cart mb-lg-0 mb-5 shadow ">
+                    <div class="card p-4">
+                      <h2 class="py-4 font-weight=bold">Cart (2 items)</h2>
+                      <div class="row">
+                        <div class="col-md-5 col-11 mx-auto bg-light d-flex 
+                        justify-content-center align-items-center shadow product_img">
+                          <img src="First img.jpeg" class="img-fluid" alt=" cart img">
+                        </div>
+                        <div class="col-md-7 col-11 mx-auto px-4 mt-2">
+                            <div class="row">
+                              <div class="col-6 card-title">
+                                <h1 class="mb-4 Product_name">Black Shirt</h1>
+                                <p class="mb-2">TYPE - CHECK</p>
+                                <p class="mb-2">COLOR: MIX</p>
+                                <p class="mb-3">SIZE:M</p>
+                              </div>
+                              <div class="col-6">
+                                <ul class="pagination justify-content-end set_quantity">
+                                  <li class="page-item">
+                                    <button class="page-link" onclick="DN('TB','interval')"><i class="fa-solid fa-minus" style="color: #1f5bc1;"></i></button>
+                                  </li>
+                                  <li class="page-item">
+                                    <input type="text" name="" class="page-link" value="0" id="TB">
+                                  </li>
+                                  <li class="page-item">
+                                    <button class="page-link" onclick="IN('TB','interval')"><i class="fa-solid fa-plus" style="color: #1f5bc1;"></i></button>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-8 d-flex justify-content-between remove_wish">
+                                <p><i class="fas fa-trash-alt"></i>REMOVE ITEM</p>
+                                <p><i class="fas fa-heart"></i>MOVE TO WISH LIST</p>
+                              </div>
+                              <div class="col-4 d-flex justify-content-end price_money">
+                                <h3>$<span id="interval">15</h3>
+                              </div>
+                            </div>
+                        </div> 
+                      </div>
+                    </div>
+                    <hr/>
+                    <div class="card p-4">
+                      <div class="row">
+                        <div class="col-md-5 col-11 mx-auto bg-light d-flex 
+                        justify-content-center align-items-center shadow product_img">
+                          <img src="Sec img.jpg" class="img-fluid" alt=" cart img">
+                        </div>
+                        <div class="col-md-7 col-11 mx-auto px-4 mt-2">
+                            <div class="row">
+                              <div class="col-6 card-title">
+                                <h1 class="mb-4 Product_name">Red Shirt</h1>
+                                <p class="mb-2">TYPE - CHECK</p>
+                                <p class="mb-2">COLOR: MIX</p>
+                                <p class="mb-3">SIZE:M</p>
+                              </div>
+                              <div class="col-6">
+                                <ul class="pagination justify-content-end set_quantity">
+                                  <li class="page-item">
+                                    <button class="page-link" onclick="DN('TB1','interval1')"><i class="fa-solid fa-minus" style="color: #1f5bc1;"></i></button>
+                                  </li>
+                                  <li class="page-item">
+                                    <input type="text" name="" class="page-link" value="0" id="TB1">
+                                  </li>
+                                  <li class="page-item">
+                                    <button class="page-link" onclick="IN('TB1','interval1')"><i class="fa-solid fa-plus" style="color: #1f5bc1;"></i></button>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-8 d-flex justify-content-between remove_wish">
+                                <p><i class="fas fa-trash-alt"></i>REMOVE ITEM</p>
+                                <p><i class="fas fa-heart"></i>MOVE TO WISH LIST</p>
+                              </div>
+                              <div class="col-4 d-flex justify-content-end price_money">
+                                <h3>$<span id="interval1">15</span></h3>
+                              </div>
+                            </div>
+                        </div> 
+                      </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-4 col-11 mx-auto mt-lg-0 mt-md-5">
+                  <div class="right_side p-3 shadow bg-white">
+                    <h2 class="Product_name mb-5">The Total Amount of</h2>
+                    <div class="price_index d-flex justify-content-between">
+                      <p>Product Amount</p>
+                      <p>$<span id="PA">0.00</span></p>
+                    </div>
+                    <div class="price_index d-flex justify-content-between">
+                      <p>Shippng Charge</p>
+                      <p>$<span id="SC">50.0</span></p>
+                    </div>
+                    <div class="price_index d-flex justify-content-between">
+                      <p>Discount Amount </p>
+                      <p>$<span id="DC">00.0</span></p>
+                    </div>
+                    <div class="total-amt d-flex justify-content-between font-weight-bold">
+                      <p>The Total Amount</p>
+                      <p>$<span id="TCA">50.00</span></p>
+                    </div>
+                    <button class="btn btn-primary text-uppercase">Checkout</button>
+                  </div>
+                  <div class="discount_code mt_3 shadow">
+                    <div class="card">
+                      <div class="card-body">
+                        <a class="d-flex justify-content-between" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample" >Add a discount code (optional)
+                          <span><i class="fas fa-chevron-down pt-1"></i></span></a>
+                        <div class="collapse" id="collapseExample">
+                          <div class="mt-3">
+                            <input type="text" name="" id="discount_code1" class="form-control font-weight-bold" placeholder="Enter the discount code">
+                            <small id="error_trw" class="text-dark mt_3">Code is Hassaan</small>
+                          </div>
+                          <button class="btn btn-primary btn-sm mt-3" onclick="discount_code()" >Apply</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mt-3 shadow p-3 bg-white">
+                    <div class="pt-4">
+                    <h5 class="mb-4">Expected delivery date</h5>
+                    <p>May 7th 2023 - May 9th 2023</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  </body>
+</html>
